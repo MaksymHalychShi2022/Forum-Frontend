@@ -1,40 +1,37 @@
 @use "variables";
 
 .form-group {
-  margin-bottom: 5px;
-  margin-top: 5px;
+  margin: variables.$small-margin;
 
   label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: variables.$small-margin;
   }
 
   input {
     //width: 90%;
     padding: 10px;
-    border: 1px solid variables.$border-color;
-    border-radius: 5px;
+    border: 1px solid black;
+    border-radius: variables.$small-margin;
   }
 
   textarea {
-    width: 100%;
-    padding: 5px;
-    border: 1px solid variables.$border-color;
-    border-radius: 5px;
+    //width: 100%;
+    padding: variables.$small-margin;
+    border: 1px solid black;
+    border-radius: variables.$small-margin;
   }
 
   button {
-    margin-bottom: 5px;
-    margin-top: 5px;
     padding: 10px;
-    background-color: variables.$button-bg;
-    color: white;
+    background-color: variables.$color-primary;
+    color: variables.$color-on-primary;
     border: none;
-    border-radius: 5px;
+    border-radius: variables.$small-margin;
     cursor: pointer;
 
     &:hover {
-      background-color: variables.$button-bg-hover;
+      background-color: variables.$color-primary-variant;
     }
   }
 }
