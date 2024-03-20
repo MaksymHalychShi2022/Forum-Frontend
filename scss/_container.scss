@@ -1,0 +1,21 @@
+@use "variables";
+
+.container {
+  display: flex;
+  width: 500px;
+  flex-direction: column;
+  background-color: variables.$container-bg;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  h1 {
+    margin: 0 0;
+    //text-align: center;
+  }
+
+  h2 {
+    //margin: 0 0;
+    //text-align: center;
+  }
+}
