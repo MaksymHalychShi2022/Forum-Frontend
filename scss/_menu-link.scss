@@ -1,0 +1,13 @@
+@use "variables";
+
+.menu-link {
+  text-decoration: none;
+  color: black;
+  margin: variables.$small-margin;
+
+  &:hover {
+    color: variables.$color-primary-variant;
+    text-decoration: underline;
+  }
+}
+

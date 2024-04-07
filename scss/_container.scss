@@ -1,0 +1,19 @@
+@use "variables";
+
+.container {
+  display: flex;
+  max-width: 500px;
+  width: 100%;
+  padding: 10px;
+  flex-direction: column;
+  border-radius: variables.$small-margin;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  h1 {
+    margin: variables.$small-margin;
+  }
+
+  h2 {
+    margin: variables.$small-margin;
+  }
+}

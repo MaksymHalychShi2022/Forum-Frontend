@@ -1,0 +1,15 @@
+{
+  "name": "forum-frontend",
+  "version": "1.0.0",
+  "description": "This is an internet forum, which can be used to discuss different topics ## Project Overview The whole forum is divided in categories. Categories can be created/deleted by Admins. Inside category users can create new topics for discussion or leave messages under existing ones.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.71.1"
+  }
+}

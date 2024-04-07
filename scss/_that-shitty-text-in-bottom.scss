@@ -1,0 +1,14 @@
+@use "variables";
+
+.that-shitty-text-in-bottom {
+  margin: variables.$small-margin;
+
+  a {
+    color: black;
+
+    &:hover {
+      color: variables.$color-primary-variant;
+      text-decoration: underline;
+    }
+  }
+}

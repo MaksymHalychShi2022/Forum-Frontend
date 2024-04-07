@@ -1,0 +1,11 @@
+@use "variables";
+
+body {
+  font-family: variables.$font-stack;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+}
