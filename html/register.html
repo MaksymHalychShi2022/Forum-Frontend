@@ -9,22 +9,22 @@
 <body>
 <div class="container">
     <h2>Register</h2>
-    <form action="index.html" method="get">
+    <form id="registerForm">
         <div class="form-group">
             <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
+            <input type="text" id="username" required>
         </div>
         <div class="form-group">
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" required>
         </div>
         <div class="form-group">
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
+            <input type="password" id="password" required>
         </div>
         <div class="form-group">
             <label for="confirm-password">Confirm Password:</label>
-            <input type="password" id="confirm-password" name="confirm-password" required>
+            <input type="password" id="confirm-password" required>
         </div>
         <div class="form-group">
             <button type="submit">Register</button>
@@ -34,5 +34,6 @@
         Already have an account? <a href="login.html">Login</a>
     </div>
 </div>
+<script src="../js/register.js"></script>
 </body>
 </html>
