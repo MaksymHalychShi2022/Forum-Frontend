@@ -1,39 +1,20 @@
-import SignInPage from "./pages/SignInPage";
-import SignUpPage from "./pages/SignUpPage";
-import NotFoundPage from "./pages/NotFoundPage"
+import SignIn from "./components/SignIn";
+import SignUp from "./components/SignUp";
+import NotFound from "./components/NotFound"
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
-import Layout from "./pages/Layout";
-import Categories from "./components/Categories";
-import Topics from "./components/Topics";
+import Layout from "./components/Layout";
 import Comments from "./components/Comments";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout/>,
-    errorElement: <NotFoundPage/>,
+    errorElement: <NotFound/>,
     children: [
-      {index: true, element: <Categories/>},
-      {path: "signin", element: <SignInPage/>},
-      {path: "signup", element: <SignUpPage/>},
-      {
-        path: "/categories",
-        element: <Categories />,
-        children: [
-          {
-            path: ":categoryId/topics",
-            element: <Topics />,
-            children: [
-              {
-                path: ":topicId/comments",
-                element: <Comments />
-              }
-            ]
-          }
-        ]
-      }
+      {index: true, element: <Comments/>},
+      {path: "login", element: <SignIn/>},
+      {path: "register", element: <SignUp/>},
     ]
-
   }
 ]);
 

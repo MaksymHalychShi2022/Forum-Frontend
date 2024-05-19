@@ -11,9 +11,9 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import {Link as RouterLink} from 'react-router-dom';
-import Copyright from "../components/Copyright";
+import Copyright from "./Copyright";
 
-export default function SignUpPage() {
+export default function SignUp() {
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -86,7 +86,7 @@ export default function SignUpPage() {
             <Grid item xs={12}>
               <FormControlLabel
                 control={<Checkbox value="allowExtraEmails" color="primary"/>}
-                label="I want to receive inspiration, marketing promotions and updates via email."
+                label="I want to receive inspiration and updates via email."
               />
             </Grid>
           </Grid>
@@ -100,7 +100,7 @@ export default function SignUpPage() {
           </Button>
           <Grid container justifyContent="flex-end">
             <Grid item>
-              <Link component={RouterLink} to="/signin" variant="body2">
+              <Link component={RouterLink} to="/login" variant="body2">
                 Already have an account? Sign in
               </Link>
             </Grid>

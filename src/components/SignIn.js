@@ -12,11 +12,11 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import {Link as RouterLink, useNavigate} from 'react-router-dom';
 
-import Copyright from "../components/Copyright";
+import Copyright from "./Copyright";
 import {useAuth} from "../AuthProvider";
 
 
-export default function SignInPage() {
+export default function SignIn() {
   const navigate = useNavigate();
   const {login} = useAuth();
   const handleSubmit = (event) => {
@@ -27,7 +27,7 @@ export default function SignInPage() {
       password: data.get('password'),
     });
 
-    fetch('http://localhost:5000/auth/login', {
+    fetch(`${process.env.REACT_APP_API_URL}/auth/login`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -104,7 +104,7 @@ export default function SignInPage() {
               </Link>
             </Grid>
             <Grid item>
-              <Link component={RouterLink} to="/signup" variant="body2">
+              <Link component={RouterLink} to="/register" variant="body2">
                 {"Don't have an account? Sign Up"}
               </Link>
             </Grid>

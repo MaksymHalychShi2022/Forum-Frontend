@@ -11,8 +11,9 @@ import Settings from '@mui/icons-material/Settings';
 import Logout from '@mui/icons-material/Logout';
 import {useAuth} from "../AuthProvider";
 import {useNavigate} from "react-router-dom";
+import MoreVertIcon from "@mui/icons-material/MoreVert";
 
-export default function AvatarMenu() {
+export default function OptionMenu() {
   const navigate = useNavigate();
   const {logout} = useAuth();
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -26,7 +27,7 @@ export default function AvatarMenu() {
 
   function handleLogout() {
     logout()
-    navigate("/signin")
+    navigate("/login")
   }
 
   return (
@@ -41,7 +42,7 @@ export default function AvatarMenu() {
             aria-haspopup="true"
             aria-expanded={open ? 'true' : undefined}
           >
-            <Avatar sx={{width: 32, height: 32, bgcolor: 'secondary.main'}}>M</Avatar>
+            <MoreVertIcon sx={{color: '#ffffff'}}/>
           </IconButton>
         </Tooltip>
       </Box>
